@@ -1,3 +1,4 @@
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
 class WebElement:
@@ -14,3 +15,13 @@ class WebElement:
 
     def get_text(self):
         str(self.find_element().text)
+
+    def exist(self):
+        try:
+            self.find_element()
+        except NoSuchElementException:
+            return False
+        return True
+
+    def visible(self):
+        return self.find_element().is_displayed()
