@@ -24,19 +24,3 @@ def test_web_tables(browser):
     assert web_tables.first_name_record4.get_text() == web_tables.first_name.get_text()
     web_tables.btn_delete_record4.click()
     assert not web_tables.record4.exist()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

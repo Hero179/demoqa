@@ -17,7 +17,7 @@ class WebTables(BasePage):
         self.age = WebElement(driver, '#age')
         self.salary = WebElement(driver, '#salary')
         self.department = WebElement(driver, '#department')
-        self.record4 = WebElement(driver, '#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(4)')
+        self.record4 = WebElement(driver, '//*[text()="ivan@ivanov.com"]')
         self.btn_edit_record4 = WebElement(driver, '##edit-record-4')
         self.first_name_record4 = WebElement(driver, '#app > div > div > div > div.col-12.mt-4.col-md-6 > div.web-tables-wrapper > div.ReactTable.-striped.-highlight > div.rt-table > div.rt-tbody > div:nth-child(4) > div > div:nth-child(1)')
         self.btn_delete_record4 = WebElement(driver, '#delete-record-4')
